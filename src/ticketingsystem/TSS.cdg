@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="tss">
+  <ClassDiagramComponents>
+    <Class name="Human" package="" visibility="public" xPosition="466.0" yPosition="163.0">
+      <Fields>
+        <Field name="ID" type="int" visibility="private"/>
+        <Field name="SocialID" type="int" visibility="private"/>
+        <Field name="FirstName" type="String" visibility="private"/>
+        <Field name="MiddleName" type="String" visibility="private"/>
+        <Field name="LastName" type="String" visibility="private"/>
+        <Field name="email" type="String" visibility="private"/>
+        <Field name="address" type="String" visibility="private"/>
+        <Field name="UserName" type="string" visibility="private"/>
+        <Field name="Password" type="string" visibility="private"/>
+        <Field name="PhoneNumber" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="User" package="" visibility="public" xPosition="28.0" yPosition="415.0">
+      <Fields>
+        <Field name="BirthDate" type="String" visibility="private"/>
+        <Field name="CompanyName" type="String" visibility="private"/>
+        <Field name="NumberOfEmployees" type="int" visibility="private"/>
+        <Field name="Ticket" type="Ticket" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="RateourService" returnType="void" visibility="public"/>
+        <Method name="AddTicket" returnType="void" visibility="public"/>
+        <Method name="EditTicket" returnType="void" visibility="public"/>
+        <Method name="DeleteTicket" returnType="void" visibility="public"/>
+        <Method name="SendMessage" returnType="HelpDesk" visibility="public">
+          <Argument type="HelpDesk" name="helpdesk"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Worker" package="" visibility="public" xPosition="349.0" yPosition="548.0">
+      <Fields>
+        <Field name="WorkingHours" type="double" visibility="private"/>
+        <Field name="Department" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="HandleTickets" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Supplier" package="" visibility="public" xPosition="799.0" yPosition="537.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="OfferServices" returnType="void" visibility="public"/>
+        <Method name="AvaliableItems" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Administrator" package="" visibility="public" xPosition="568.0" yPosition="548.0">
+      <Fields>
+        <Field name="Salary" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="HandleUrgentTickets" returnType="void" visibility="public"/>
+        <Method name="UpdateTicketStatus" returnType="void" visibility="public"/>
+        <Method name="viewDashBoard" returnType="void" visibility="public"/>
+        <Method name="DueDate" returnType="Check" visibility="public"/>
+        <Method name="UpdateTicket" returnType="void" visibility="public"/>
+        <Method name="PrintReports" returnType="void" visibility="public"/>
+        <Method name="MakePayement" returnType="void" visibility="public"/>
+        <Method name="AssignTicket" returnType="void" visibility="public"/>
+        <Method name="AccessDashBoard" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ticket" package="" visibility="public" xPosition="11.0" yPosition="792.0">
+      <Fields>
+        <Field name="Description" type="String" visibility="private"/>
+        <Field name="priority" type="String" visibility="private"/>
+        <Field name="TicketDate" type="Date" visibility="private"/>
+        <Field name="TicketID" type="int" visibility="private"/>
+        <Field name="DueDate" type="Date" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Date" package="" visibility="public" xPosition="11.0" yPosition="1513.0">
+      <Fields>
+        <Field name="Day" type="int" visibility="private"/>
+        <Field name="Month" type="int" visibility="private"/>
+        <Field name="Year" type="int" visibility="private"/>
+        <Field name="hour" type="int" visibility="private"/>
+        <Field name="minute" type="int" visibility="private"/>
+        <Field name="seconds" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Service  " package="" visibility="public" xPosition="206.0" yPosition="1354.0">
+      <Fields>
+        <Field name="ServiceID" type="int" visibility="private"/>
+        <Field name="ServiceName" type="String" visibility="private"/>
+        <Field name="ServicePrice" type="Double" visibility="private"/>
+        <Field name="ServiceDate" type="Date" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="MakePayement" package="" visibility="public" xPosition="400.0" yPosition="1004.0">
+      <Fields>
+        <Field name="amount" type="Float" visibility="private"/>
+        <Field name="TransactionID" type="int" visibility="private"/>
+        <Field name="UserID" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="ConfirmTransaction" returnType="void" visibility="public"/>
+        <Method name="ReturnMoneyOnCancellation" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Rate our Service  " package="" visibility="public" xPosition="400.0" yPosition="822.0">
+      <Fields>
+        <Field name="description" type="String" visibility="private"/>
+        <Field name="rating" type="int" visibility="private"/>
+        <Field name="NoOfRatedTickets" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Ticket Status" package="" visibility="public" xPosition="400.0" yPosition="1224.0">
+      <Fields>
+        <Field name="Status" type="string" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Total Tickets" package="" visibility="public" xPosition="1037.0" yPosition="822.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="TotalTickets" returnType="Public" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="DashBoard  " package="" visibility="public" xPosition="658.0" yPosition="970.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="DisplayTotalTickets" returnType="void" visibility="public"/>
+        <Method name="DisplayNewTickets" returnType="void" visibility="public"/>
+        <Method name="DisplaySolvedTickets" returnType="void" visibility="public"/>
+        <Method name="DisplayClosedTickets" returnType="void" visibility="public"/>
+        <Method name="DisplayOpenedTickets" returnType="void" visibility="public"/>
+        <Method name="DisplayUnAnsweredTickets" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="NewTickets" package="" visibility="public" xPosition="1018.0" yPosition="947.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="NewTickets" returnType="Public" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="OpenTickets  " package="" visibility="public" xPosition="799.0" yPosition="1217.0">
+      <Fields>
+        <Field name="OpenedTime" type="Date" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="DeleteTicket" returnType="void" visibility="public"/>
+        <Method name="OpenTickets" returnType="Public" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="SolvedTickets" package="" visibility="public" xPosition="597.0" yPosition="1233.0">
+      <Fields>
+        <Field name="TimeTakenToBeSolved" type="Date" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="SolvedTickets" returnType="Public" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Un_AnsweredTickets" package="" visibility="public" xPosition="999.0" yPosition="1080.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="Un_AnsweredTickets" returnType="Public" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ClosedTickets" package="" visibility="public" xPosition="972.0" yPosition="1281.0">
+      <Fields>
+        <Field name="ClosedTime" type="Date" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="ClosedTickets" returnType="Public" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Reports" package="" visibility="public" xPosition="751.0" yPosition="854.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="CollectData" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Category  " package="" visibility="public" xPosition="219.0" yPosition="892.0">
+      <Fields>
+        <Field name="CategoryType" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Assets" package="" visibility="public" xPosition="206.0" yPosition="1096.0">
+      <Fields>
+        <Field name="AssetsID" type="int" visibility="private"/>
+        <Field name="SerialNumber" type="int" visibility="private"/>
+        <Field name="Model" type="String" visibility="private"/>
+        <Field name="DateOfPurchase" type="Date" visibility="private"/>
+        <Field name="NumberOfAssetsInStore" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="FAQ  " package="" visibility="public" xPosition="422.0" yPosition="1370.0">
+      <Fields>
+        <Field name="ID" type="int" visibility="private"/>
+        <Field name="Type" type="String" visibility="private"/>
+        <Field name="Question" type="String" visibility="private"/>
+        <Field name="Answer" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Pricing Models  " package="" visibility="public" xPosition="688.0" yPosition="1430.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="TrackTicket" package="" visibility="public" xPosition="11.0" yPosition="1326.0">
+      <Fields>
+        <Field name="id" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="untitledMethod" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Help Desk  " package="" visibility="public" xPosition="788.0" yPosition="669.0">
+      <Fields>
+        <Field name="id" type="int" visibility="private"/>
+        <Field name="issueSbject" type="String[]" visibility="private"/>
+        <Field name="body" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="CreateMessage" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="LogIn Options" package="" visibility="public" xPosition="219.0" yPosition="744.0">
+      <Methods>
+        <Method name="LoginIn" returnType="void" visibility="public"/>
+        <Method name="Logout" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="CRUD  " package="" visibility="public" xPosition="11.0" yPosition="1111.0">
+      <Methods>
+        <Method name="Create" returnType="void" visibility="public"/>
+        <Method name="Read" returnType="void" visibility="public"/>
+        <Method name="Update" returnType="void" visibility="public"/>
+        <Method name="Delete" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="assets" source="Ticket" target="Assets" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Worker" target="Human"/>
+    <HasRelation name="reports" source="Administrator" target="Reports" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="TST" source="Administrator" target="Ticket Status" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="TT" source="DashBoard  " target="Total Tickets" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="FAQ  " target="CRUD  "/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Rate our Service  " target="CRUD  "/>
+    <IsRelation name="is" source="Administrator" target="Human"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Ticket Status" target="CRUD  "/>
+    <HasRelation name="HD" source="Help Desk  " target="Administrator" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="category" source="Category  " target="Ticket" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Ticket" target="CRUD  "/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Worker" target="LogIn Options"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="User" target="LogIn Options"/>
+    <HasRelation name="NT" source="DashBoard  " target="NewTickets" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="date" source="Assets" target="Date" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="ticket_notanswered" source="DashBoard  " target="Un_AnsweredTickets" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="User" target="Human"/>
+    <HasRelation name="ot" source="DashBoard  " target="OpenTickets  " type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="Tickets" source="User" target="Ticket" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..*" collectionType="ArrayList"/>
+    <HasRelation name="HD" source="Help Desk  " target="Worker" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <UseRelation name="Rate" source="User" target="Rate our Service  " sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="TrackTicket" target="CRUD  "/>
+    <HasRelation name="Service Date" source="Service  " target="Date" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="Pay" source="Administrator" target="MakePayement" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="st" source="DashBoard  " target="SolvedTickets" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="ct" source="DashBoard  " target="ClosedTickets" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Supplier" target="Human"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Administrator" target="LogIn Options"/>
+    <HasRelation name="db" source="Administrator" target="DashBoard  " type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
