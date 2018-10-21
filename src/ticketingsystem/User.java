@@ -1,5 +1,5 @@
 
-public class User extends Human implements Ticket{
+public class User extends Human {
    
     private String BirthDate;
     private String CompanyName;
