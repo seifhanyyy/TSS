@@ -8,7 +8,35 @@ private String UserName;
 private String Password;
 private String PhoneNumber;
 private String Address;
+private String FirstName;
+private String LastName;
+private String MiddleName;
 
+    public String getFirstName() {
+        return FirstName;
+    }
+
+    public void setFirstName(String FirstName) {
+        this.FirstName = FirstName;
+    }
+
+    public String getLastName() {
+        return LastName;
+    }
+
+    public void setLastName(String LastName) {
+        this.LastName = LastName;
+    }
+
+    public String getMiddleName() {
+        return MiddleName;
+    }
+
+    public void setMiddleName(String MiddleName) {
+        this.MiddleName = MiddleName;
+    }
+
+    
     public int getId() {
         return id;
     }
