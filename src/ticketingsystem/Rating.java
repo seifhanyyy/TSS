@@ -9,7 +9,7 @@ package project;
  *
  * @author Dr.Bony George
  */
-public class RateOurService implements CRUD {
+public class Rating implements CRUD {
 
     public BufferedString getDescription() {
         return description;
