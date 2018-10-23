@@ -3,9 +3,6 @@ package ticketingsystem;
 public class Human {
 private int id;
 private int SocialID;
-private String FirstName;
-private String MiddleName;
-private String LastName;
 private String email;
 private String UserName;
 private String Password;
@@ -26,30 +23,6 @@ private String Address;
 
     public void setSocialID(int SocialID) {
         this.SocialID = SocialID;
-    }
-
-    public String getFirstName() {
-        return FirstName;
-    }
-
-    public void setFirstName(String FirstName) {
-        this.FirstName = FirstName;
-    }
-
-    public String getMiddleName() {
-        return MiddleName;
-    }
-
-    public void setMiddleName(String MiddleName) {
-        this.MiddleName = MiddleName;
-    }
-
-    public String getLastName() {
-        return LastName;
-    }
-
-    public void setLastName(String LastName) {
-        this.LastName = LastName;
     }
 
     public String getEmail() {
