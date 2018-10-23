@@ -34,7 +34,7 @@ public class User extends Human{
         
         this.NumberOfEmployees = NumberOfEmployees;
     }
-    public  getTicket() 
+    public Ticket getTicket() 
     {   
         return Ticket;
     }
