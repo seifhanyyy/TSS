@@ -1,6 +1,6 @@
 package project;
 
-public class FAQ {
+public class FAQ implements CRUD{
 int ID;
 String Type;
 String Question;
