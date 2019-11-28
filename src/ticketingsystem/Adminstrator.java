@@ -11,7 +11,8 @@ private double Salary;
         this.Salary = Salary;}
 public void HandleUrgentTickets(){
 }
-public void UpdateTicketStatus(){
+public void UpdateTicketStatus(){ 
+    
 }
 public void viewDashBoard(){
 }
