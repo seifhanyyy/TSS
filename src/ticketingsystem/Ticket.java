@@ -1,5 +1,5 @@
 
-public class Ticket {
+public class Ticket implements CRUD {
   
     private String Description;
    private String []Priority;
