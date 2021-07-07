@@ -34,15 +34,6 @@ public class User extends Human{
         
         this.NumberOfEmployees = NumberOfEmployees;
     }
-    public Ticket getTicket() 
-    {   
-        return Ticket;
-    }
-
-    public void setTicket( ) {   
-//Ask le kol var kaza data
-        
-    }
     public void RateourService()
     {
         
